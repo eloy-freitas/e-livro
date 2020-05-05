@@ -1,0 +1,6 @@
+$q = "SELECT descricaopro FROM Produto WHERE codpro = $i";		
+					$result = mysqli_query($conn,$q);
+					while ($row = mysqli_fetch_object($result)) 
+					{
+						echo $row->descricaopro;
+					}		
