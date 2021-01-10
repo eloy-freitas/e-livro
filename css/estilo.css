@@ -1,3 +1,44 @@
 body{
     background-color: rgb(235, 235, 235);
 }
+
+/*carousel*/
+.carousel-control-prev, .carousel-control-next{
+    width: 30px;
+}
+
+/*produtos*/
+.link-nome-produto{
+    color:black;
+    
+}
+
+.link-nome-produto:hover{
+    color:gray;
+    text-decoration: none;
+}
+
+.item-produto {
+    width: 260px;
+    margin: 2px auto;
+}
+
+.img-produto{
+    padding: 5px 5px;
+    max-height: 200px;
+    width: auto;
+    margin: 5px auto;
+}
+
+.info-produto{
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.autor-produto{
+    font-size: 0.7em;
+}
+
+.preco-produto {
+    font-weight: 700;
+}
