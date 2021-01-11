@@ -22,6 +22,7 @@ body{
 .item-produto {
     width: 260px;
     margin: 2px auto;
+   
 }
 
 .img-produto{
@@ -47,7 +48,7 @@ body{
 /*barra lateral*/
 .navegacao-categoria{
     text-decoration-style: none;
-    font-size: 0.9em;
+    font-size: 0.85em;
     text-align: left;
     color:rgb(100, 100, 100);
     
@@ -94,3 +95,35 @@ footer ul li{
     float: right;
     margin: 0px 5px;
 } 
+
+/*info view produto*/
+.info-view-produto{
+    color:rgb(100, 100, 100);
+    font-size: 0.9em;
+}
+
+.codigo{
+    font-weight: 700;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+   
+ }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
