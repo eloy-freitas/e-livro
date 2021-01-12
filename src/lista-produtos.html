@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>e-livro</title>
+</head>
+
+<body>
+    <!--inicio barra de navegação-->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a href="" class="navbar-brand"><i class="fas fa-book mr-1"></i>e-livro</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="target">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Cadastrar</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="" class="nav-link">Carrinho
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge badge-danger">120</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--fim barra de navegação-->
+        <!-- inicio barra de pequisa-->
+        <nav class="navbar navbar-expand-sm bg-secondary">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-group-text"
+                                    placeholder="O que você procura?">
+                                <button class="btn btn-outline-dark ">
+                                    <i class="fas fa-search fa-1x"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--fim barra de pequisa-->
+
+    <!--inicio área de conteúdo-->
+    <section>
+        <div class="container mt-3 mb-3 bg-light p-3">
+
+            <div class="row">
+                <!--inicio menu lateral-->
+                <div class="col-md-2">
+                    <h5 class="h5 p-1 fw-light">Categorias</h5>
+                    <ul class="navbar-nav p-1">
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Cadastrar</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Listar</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <h5 class="h5 p-1 fw-light">Produtos</h5>
+                    <ul class="navbar-nav p-1">
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Cadastrar</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Listar</a>
+                        </li>
+                    </ul>
+
+                    <hr>
+                </div>
+                <!--fim menu lateral-->
+
+                <div class="col-md-10">
+                    <!--inicio formulario de pesquisa de produto-->
+
+                    <h4 class="h4">Listar produtos</h4>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form class="form-inline p-1">
+                                <div class="input-group mr-1 mb-1">
+                                    <input type="text" class="form-control input-group-text"
+                                        placeholder="Pesquisar produto">
+                                    <button class="btn btn-sm btn-outline-success ">
+                                        <i class="fas fa-search fa-1x"></i>
+                                    </button>
+                                   
+                                </div>
+                                <div class="form-group mb-1">
+                                    <select class="form-control" id="Categoria">
+                                        <option>direito</option>
+                                        <option>história e geografia</option>
+                                        <option>literatura do brasil</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                     <!--fim formulario de pesquisa de produto-->
+
+                    <!--inicio tabela de resultados -->
+                    <div class="table-responsive-lg">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">cod</th>
+                                    <th class="d-flex flex-wrap" scope="col">nome</th>
+                                    <th scope="col">autor</th>
+                                    <th scope="col">marca</th>
+                                    <th scope="col">ISBN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4654464</td>
+                                    <td>Harry Potter e A Pedra Filosofal 1 - Capa Dura</td>
+                                    <td>Rowling, J. K.</td>
+                                    <td>Pandorga</td>
+                                    <td>9788532530783</td>
+                                    <td>
+                                        <button type="button" id="info-button" class="btn btn-sm btn-secondary"
+                                            data-container="body" data-toggle="popover" data-placement="top"
+                                            title="Informações" data-content="número de páginas: 208;
+                                                acabamento: capa dura;
+                                                país: Brasil;
+                                                altura: 23;
+                                                largura: 16;
+                                                peso: 0.26;
+                                                ano: 2017;">
+                                            <i class="far fa-eye"></i>
+                                        </button>
+                                    </td>
+                                    <td colspan="2">
+
+                                        <a class="btn btn-info btn-sm" role="button">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <button th:id="${#strings.concat('btn_funcionarios/excluir/', f.id)}"
+                                            type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#myModal">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4654464</td>
+                                    <td>Harry Potter e A Pedra Filosofal 1 - Capa Dura</td>
+                                    <td>Rowling, J. K.</td>
+                                    <td>Pandorga</td>
+                                    <td>9788532530783</td>
+                                    <td>
+                                        <button type="button" id="info-button" class="btn btn-sm btn-secondary"
+                                            data-container="body" data-toggle="popover" data-placement="top"
+                                            title="Informações" data-content="número de páginas: 208;
+                                                acabamento: capa dura;
+                                                país: Brasil;
+                                                altura: 23;
+                                                largura: 16;
+                                                peso: 0.26;
+                                                ano: 2017;">
+                                            <i class="far fa-eye"></i>
+                                        </button>
+                                    </td>
+                                    <td colspan="2">
+
+                                        <a class="btn btn-info btn-sm" role="button">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <button th:id="${#strings.concat('btn_funcionarios/excluir/', f.id)}"
+                                            type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#myModal">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>4654464</td>
+                                    <td>Harry Potter e A Pedra Filosofal 1 - Capa Dura</td>
+                                    <td>Rowling, J. K.</td>
+                                    <td>Pandorga</td>
+                                    <td>9788532530783</td>
+                                    <td>
+                                        <button type="button" id="info-button" class="btn btn-sm btn-secondary"
+                                            data-container="body" data-toggle="popover" data-placement="top"
+                                            title="Informações" data-content="número de páginas: 208;
+                                                acabamento: capa dura;
+                                                país: Brasil;
+                                                altura: 23;
+                                                largura: 16;
+                                                peso: 0.26;
+                                                ano: 2017;">
+                                            <i class="far fa-eye"></i>
+                                        </button>
+                                    </td>
+                                    <td colspan="2">
+
+                                        <a class="btn btn-info btn-sm" role="button">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <button th:id="${#strings.concat('btn_funcionarios/excluir/', f.id)}"
+                                            type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#myModal">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>4654464</td>
+                                    <td>Harry Potter e A Pedra Filosofal 1 - Capa Dura</td>
+                                    <td>Rowling, J. K.</td>
+                                    <td>Pandorga</td>
+                                    <td>9788532530783</td>
+                                    <td>
+                                        <button type="button" id="info-button" class="btn btn-sm btn-secondary"
+                                            data-container="body" data-toggle="popover" data-placement="top"
+                                            title="Informações" data-content="número de páginas: 208;
+                                                acabamento: capa dura;
+                                                país: Brasil;
+                                                altura: 23;
+                                                largura: 16;
+                                                peso: 0.26;
+                                                ano: 2017;">
+                                            <i class="far fa-eye"></i>
+                                        </button>
+                                    </td>
+                                    <td colspan="2">
+
+                                        <a class="btn btn-info btn-sm" role="button">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <button th:id="${#strings.concat('btn_funcionarios/excluir/', f.id)}"
+                                            type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#myModal">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--inicio tabela de resultados -->
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--fim área de conteúdo-->
+
+    <!--inicio rodapé-->
+    <footer class="bg-dark mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 navbar navbar-dark">
+
+                    <a href="" class="navbar-brand"><i class="fas fa-book mr-1"></i>e-livro</a>
+
+                </div>
+                <div class="col-md-2 mt-3 mb-3">
+                    <h4>Compania</h4>
+                    <ul class="navbar-nav">
+                        <li class="navegacao-rodape">
+                            <a class="link-rodape" href="">Sobre</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-rodape" href="">Empregos</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-rodape" href="">Novidades</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-3 mb-3">
+                    <h4>Atendimento</h4>
+                    <ul class="navbar-nav">
+                        <li class="navegacao-rodape">
+                            <a class="link-rodape" href="">Dúvidas frequentes</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-rodape" href="">Políticas de troca e devolução</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-rodape" href="">Fale conosco</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mt-3 mb-3">
+                    <h4>Seja um vendedor</h4>
+                    <ul class="navbar-nav">
+                        <li class="navegacao-rodape">
+                            <a class="link-rodape" href="">Anuncie seu produto</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-rodape" href="">Publique seus livros</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4 mt-3 mb-3 ml-auto d-flex align-items-center justify-content-right">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img class="img-fluid" src="../img/redes/facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="img-fluid" src="../img/redes/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="img-fluid" src="../img/redes/instagram.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--fim rodapé-->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+
+
+    </script>
+</body>
+
+</html>

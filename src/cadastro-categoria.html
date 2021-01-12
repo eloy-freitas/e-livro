@@ -6,12 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -65,141 +62,70 @@
                 </div>
             </div>
         </nav>
-        
+
     </header>
     <!--fim barra de pequisa-->
 
-    <!--inicio informações do produto-->
+    <!--inicio área de conteúdo-->
     <section>
-        <div class="container mt-3 bg-light">
+        <div class="container mt-3 mb-3 bg-light p-3">
             <div class="row">
-                <div class="col-md-5">
-                    <div class="container p-5 ">
-                        <img class="img-fluid" src="../img/livros/hp-pedra-filosofal.jpg" alt="">
+                <!--inicio menu lateral-->
+                <div class="col-md-2">
+                    <h5 class="h5 p-1 fw-light">Categorias</h5>
+                    <ul class="navbar-nav p-1">
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Cadastrar</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Listar</a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <h5 class="h5 p-1 fw-light">Produtos</h5>
+                    <ul class="navbar-nav p-1">
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Cadastrar</a>
+                        </li>
+                        <li class="navegacao-categoria">
+                            <a class="link-categoria" href="">Listar</a>
+                        </li>
+                    </ul>
+                   
+                    <hr>
+                </div>
+                <!--fim menu lateral-->
+
+                <!--inicio formulário-->
+                <div class="col-md-10">
+                    <div class="container mb-5">
+                        <form action="">
+                            <h4 class="h4 fw-light">Cadastro categoria</h4>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label for="usuario">Código</label>
+                                        <input class="form-control form-control-sm disabled" type="text" id="usuario" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="usuario">Nome</label>
+                                        <input class="form-control form-control-sm disabled" type="text" id="usuario">
+                                    </div>
+                                </div>
+                            </div>
+                            <input class="btn btn-outline-dark" type="submit" value="Cadastrar">
+                        </form>
                     </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="container p-5 ">
-                        <h4>Harry Potter e A Pedra Filosofal 1 - Capa Dura</h4>
-                        
-                        <p class="info-view-produto">Autor: Rowling,J. K. | Marca: Pandorga</p>
-                        <p class="codigo">Código: 1645878</p>
-                        <h5>Avaliação</h5>
-                        <div class="d-flex align-items-left mb-3">
-                            <i class="fas fa-star mr-1"></i>
-                            <i class="fas fa-star mr-1"></i>
-                            <i class="fas fa-star mr-1"></i>
-                            <i class="fas fa-star mr-1"></i>
-                            <i class="far fa-star mr-1"></i>
-                        </div>
-                        <h2 class="mt-2 mb-2">R$36,00</h2>
-                        <p class="info-view-produto">até 1x no crédito</p>
-                        <div class="pagamento d-flex align-items-center">
-                            <i class="fas fa-barcode fa-2x mr-1"></i><span>Boleto bancário: R$36,00</span>
-                        </div>
-                        <div class="pagamento d-flex align-items-center">
-                            <i class="far fa-credit-card fa-2x mr-1"></i><span>Cartão de Credito: R$36,00 <br><span class="info-view-produto">Em até 1x de R$ 36,00 sem juros</span> </span>
-                        </div>
-                        <a class="btn btn-outline-dark btn-lg btn-block mt-3 mb-3" href="">Comprar</a>
-                    </div>
-                </div>
+                <!--fim formulario-->
             </div>
         </div>
     </section>
-    <!--fim informações do produto-->
-
-    <!--inicio descrição do produto-->
-    <section>
-        <div class="container bg-light mt-3 mb-3">
-            <div class="row ">
-                <div class="col-md-12 p-3">
-                    <h3>Descrição</h3>
-                    <p>Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo 
-                        quando ele ainda era um bebê. 
-                        Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. 
-                        Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, 
-                        herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. 
-                        No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, 
-                        como o de Alice no país das maravilhas, que o conduz a um mundo mágico. 
-                        Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que 
-                        enfrentar a pior força do mal, o homem que assassinou seus pais. 
-                        O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, 
-                        também, que é um herói no universo dos magos. 
-                        Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a 
-                        causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, 
-                        ele sequer é um feiticeiro qualquer; ele é Harry Potter, símbolo de poder, resistência e um líder 
-                        natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos,
-                         unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.
-                        </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--fim descrição do produto-->
-
-    <!--inicio caracteríticas do produto-->
-    <section>
-        <div class="container bg-light mt-3 mb-3">
-            <div class="row">
-                <div class="col-md-12 p-3">
-                    <h3>Caracteríticas</h3>
-                    <table class="table table-striped">
-                        <tbody>
-                          <tr>
-                            <td>Número</td>
-                            <td>1</td>
-                          </tr>
-                          <tr>
-                            <td>Ano</td>
-                            <td>2017</td>
-                          </tr>
-                          <tr>
-                            <td>Número de páginas</td>
-                            <td>208</td>
-                          </tr>
-                          <tr>
-                            <td>Acabamento</td>
-                            <td>Capa dura</td>
-                          </tr>
-                          <tr>
-                            <td>Volúme</td>
-                            <td>1</td>
-                          </tr>
-                          <tr>
-                            <td>Idioma</td>
-                            <td>Português</td>
-                          </tr>
-                          <tr>
-                            <td>País</td>
-                            <td>Brasil</td>
-                          </tr>
-                          <tr>
-                            <td>Altura</td>
-                            <td>23</td>
-                          </tr>
-                          <tr>
-                            <td>Largura</td>
-                            <td>16</td>
-                          </tr>
-                          <tr>
-                            <td>Peso</td>
-                            <td>0.26</td>
-                          </tr>
-                          <tr>
-                            <td>ISBN</td>
-                            <td>9788532530783</td>
-                          </tr>
-                          <tr>
-                            <td>Autor</td>
-                            <td>Rowling, J. K.</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!--fim caracteríticas do produto-->
+    <!--fim área de conteúdo-->
 
     <!--inicio rodapé-->
     <footer class="bg-dark mt-3">
@@ -273,7 +199,7 @@
         </div>
     </footer>
     <!--fim rodapé-->
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
