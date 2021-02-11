@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<
+</head>
+<body>
+
+	<!--inicio menu lateral-->
+	<div th:fragment="sideMenu2" class="col-md-2">
+		<h5 class="h5 p-1 fw-light">Categorias</h5>
+		<ul class="navbar-nav p-1">
+			<li class="navegacao-categoria"><a class="link-categoria"
+				th:href="@{/categorias/cadastrar}">Cadastrar</a></li>
+			<li class="navegacao-categoria"><a class="link-categoria"
+				th:href="@{/categorias/listar}">Listar</a></li>
+		</ul>
+		<hr>
+		<h5 class="h5 p-1 fw-light">Produtos</h5>
+		<ul class="navbar-nav p-1">
+			<li class="navegacao-categoria"><a class="link-categoria"
+				href="">Cadastrar</a></li>
+			<li class="navegacao-categoria"><a class="link-categoria"
+				href="">Listar</a></li>
+		</ul>
+
+		<hr>
+		<h5 class="h5 p-1 fw-light">Autores</h5>
+		<ul class="navbar-nav p-1">
+			<li class="navegacao-categoria"><a class="link-categoria"
+				th:href="@{/autores/cadastrar}">Cadastrar</a></li>
+			<li class="navegacao-categoria"><a class="link-categoria"
+				th:href="@{/autores/listar}">Listar</a></li>
+		</ul>
+
+		<hr>
+		<h5 class="h5 p-1 fw-light">Marcas</h5>
+		<ul class="navbar-nav p-1">
+			<li class="navegacao-categoria"><a class="link-categoria"
+				th:href="@{/marcas/cadastrar}">Cadastrar</a></li>
+			<li class="navegacao-categoria"><a class="link-categoria"
+				th:href="@{/marcas/listar}">Listar</a></li>
+		</ul>
+
+		<hr>
+	</div>
+	<!--fim menu lateral-->
+</body>
+</html>

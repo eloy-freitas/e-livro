@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br" layout:decorate="~{layout}">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+
+</head>
+
+<body>
+
+
+	<!--inicio área de conteúdo-->
+	<section layout:fragment="corpo">
+		<div class="container mt-3 mb-3 bg-light p-3">
+			<div class="row">
+				<!--inicio menu lateral-->
+				<div th:replace="fragments/sideMenu2 :: sideMenu2"></div>
+				<!--fim menu lateral-->
+
+				<!--inicio formulário-->
+				<div class="col-md-10">
+					<div class="container mb-5">
+					
+						<div th:replace="fragments/alert"></div>
+						
+						<form th:action="${marca.id == null} ? @{/marcas/salvar} : @{/marcas/editar}" 
+							th:object="${marca}" method="POST">
+							<h4 class="h4 fw-light">Cadastro marca</h4>
+							<div class="row">
+								<div class="col-md-5">
+									<div class="form-group">
+										<label for="usuario">Código</label> 
+										<input th:f
+											class="form-control form-control disabled" type="text"
+											id="codigo" readonly>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8">
+									<div class="form-group">
+										<label for="usuario">Nome</label> 
+										<input th:field="*{nome}"
+											class="form-control form-control disabled" type="text"
+											id="nome">
+									</div>
+								</div>
+							</div>
+							<input type="hidden" id="id" th:field="*{id}">
+							<input class="btn btn-outline-success" type="submit"
+								value="Salvar"> 
+							<a href="#"class="btn btn-outline-danger">Cancelar</a>
+						</form>
+					</div>
+				</div>
+				<!--fim formulario-->
+			</div>
+		</div>
+	</section>
+	<!--fim área de conteúdo-->
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br" layout:decorate="~{layout}">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>e-livro</title>
+</head>
+
+<body>
+
+    <!--inicio área de conteúdo-->
+    <section layout:fragment="corpo">
+        <div class="container mt-3 mb-3 bg-light p-3">
+
+            <div class="row">
+              
+              <div th:replace="fragments/sideMenu2 :: sideMenu2">
+              </div>
+
+                <div class="col-md-10">
+                    <!--inicio formulario de pesquisa de produto-->
+
+                    <h4 class="h4">Listar categorias</h4>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form class="form-inline p-1">
+                                <div class="input-group mr-1 mb-1">
+                                    <input type="text" class="form-control input-group-text"
+                                        placeholder="Pesquisar categoria">
+                                    <button class="btn btn-sm btn-outline-success ">
+                                        <i class="fas fa-search fa-1x"></i>
+                                    </button>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <!--fim formulario de pesquisa de produto-->
+
+                    <!--inicio tabela de resultados -->
+                    
+                    <div th:replace="fragments/alert"></div>
+                    
+                    <div class="table-responsive-lg">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">código</th>
+                                    <th class="d-flex flex-wrap" scope="col">nome</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr th:each="c : ${categorias}">
+                                    <td th:text="${c.id}">id</td>
+                                    <td th:text="${c.nome}">nome</td>
+                                    <td colspan="2">
+
+                                        <a th:href="@{/categorias/editar/{id} (id=${c.id})}" class="btn btn-info btn-sm" role="button">
+                                            <i class="fas fa-pen"></i>
+                                        </a>
+
+                                    </td>
+                                    <td>
+                                        <button th:id="${ 'btn_categorias/excluir/' + c.id}"
+                                            type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                                            data-target="#myModal">
+                                            <i class="far fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+        
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--inicio tabela de resultados -->
+                </div>
+
+            </div>
+        </div>
+	
+		<div th:replace="fragments/modal :: modal"></div>
+    </section>
+    <!--fim área de conteúdo-->
+
+
+
+
+</body>
+
+</html>
